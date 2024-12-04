@@ -1,0 +1,13 @@
+/* static/css/admin/feature_custom.css */
+.admin-feature-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.admin-feature-table td {
+    color: #555;
+}
+
+.admin-feature-table tr:hover {
+    background-color: #e6f7ff;
+}

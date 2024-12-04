@@ -1,0 +1,33 @@
+<!-- genomic_sequence_list.html -->
+
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h1>Genomic Sequences</h1>
+  <div>
+    {% for sequence in sequences %}
+      <h3>{{ sequence.accession }}</h3>
+      <p>{{ sequence.description }}</p>
+
+      <h4>Features:</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature Type</th>
+            <th>Start</th>
+            <th>End</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for feature in sequence.features.all %}
+            <tr>
+              <td>{{ feature.type }}</td>
+              <td>{{ feature.start }}</td>
+              <td>{{ feature.end }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endfor %}
+  </div>
+{% endblock %}
