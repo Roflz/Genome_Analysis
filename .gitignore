@@ -160,7 +160,5 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
-/analytics_pipeline/genomic_sequences/fna/*
-/analytics_pipeline/genomic_sequences/gbff/*
 /analytics_pipeline/genomic_annotations.csv
 /analytics_pipeline/Rplots.pdf
